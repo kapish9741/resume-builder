@@ -31,7 +31,7 @@ const Personal = ({form, updateForm}) => {
                 <div className='w-full flex justify-start items-center flex-row gap-8'>
                     <div className='w-full flex justify-center items-start flex-col gap-2'>
                         <label htmlFor="address" className='text-gray-300 text-sm py-1'>Address</label>
-                        <input onChange={handleChange} name='address' type="text" placeholder='123 Main St, City Country' className='w-full px-3 py-3 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 placeholder:text-gray-600' />
+                        <input onChange={handleChange} name='personalPortfolio' type="text" placeholder='kapishrohilla.netlify.app' className='w-full px-3 py-3 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 placeholder:text-gray-600' />
                     </div>
                     <div className='w-full flex justify-center items-start flex-col gap-2'>
                         <label htmlFor="twitter" className='text-gray-300 text-sm py-1'>Twitter</label>
@@ -41,7 +41,7 @@ const Personal = ({form, updateForm}) => {
                 <div className='w-full flex justify-start items-center flex-row gap-8'>
                     <div className='w-full flex justify-center items-start flex-col gap-2'>
                         <label htmlFor="linkedin" className='text-gray-300 text-sm px-2 py-1'>LinkedIn</label>
-                        <input onChange={handleChange} name='linkedin' type="text" placeholder='www.linkedin.com/in/username' className='w-full px-3 py-3 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 placeholder:text-gray-600' />
+                        <input onChange={handleChange} name='linkedin' type="text" placeholder='linkedin.com/in/username' className='w-full px-3 py-3 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 placeholder:text-gray-600' />
                     </div>
                     <div className='w-full flex justify-center items-start flex-col gap-2'>
                         <label htmlFor="github" className='text-gray-300 text-sm py-1'>GitHub</label>

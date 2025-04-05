@@ -11,7 +11,7 @@ const AppPage = () => {
     name: '',
     phone: '',
     email: '',
-    address: '',
+    personalPortfolio: '',
     twitter: '',
     linkedin: '',
     github: '',
