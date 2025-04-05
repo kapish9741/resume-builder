@@ -42,7 +42,7 @@ const AppPage = () => {
           <button className='text-gray-100 bg-blue-500 px-10 py-4 rounded-lg hover:bg-blue-600 cursor-pointer flex justify-center items-center gap-2' onClick={generateResume}>Generate Resume<i className="bi bi-arrow-right text-gray-100 text-md"></i></button>
         </section>
       </main>
-      <footer className='w-screen h-20 flex justify-center items-center'><Footer /></footer>
+      <footer className='w-screen h-20 flex justify-center items-center mb-100'><Footer /></footer>
     </>
   )
 }
