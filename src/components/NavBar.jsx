@@ -13,7 +13,7 @@ const NavBar = () => {
 
         <div className="cursor-pointer flex items-center ml-8">
             <i className="bi bi-file-text text-blue-500 text-3xl mr-2"></i>
-            <h1 className="text-xl font-medium" onClick={() => navigate("/")}>ResumeBuilder</h1>
+            <h1 className="text-xl font-medium" onClick={() => navigate("/")}>Hirelyst</h1>
         </div>
         <div className="flex items-center space-x-6">
             <h2 className='cursor-pointer inline relative before:bg-blue-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100' onClick={() => navigate("/")}>Home</h2>
