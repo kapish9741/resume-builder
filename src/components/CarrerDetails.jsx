@@ -53,7 +53,7 @@ const CareerDetails = ({form, updateForm}) => {
             <form action="" className='w-full flex justify-center items-start gap-6 flex-col mt-10'>
                 <div className='w-full flex justify-center items-start flex-col gap-2'>
                     <label htmlFor='career-bio' className='text-gray-300 text-sm py-1'>Career Objective</label>
-                    <textarea name='career-bio' placeholder='Brief Summary of Your Career goals and aspirations...' className='w-full h-30 px-3 py-2 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 text-left placeholder:text-gray-600' onChange={(e) => updateForm({ ...form, careerObjective: e.target.value })}></textarea>
+                    <textarea name='career-bio' placeholder='Brief Summary of Your Career goals and aspirations...' className='w-full h-30 px-3 py-2 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 text-left placeholder:text-gray-600 overflow-y-auto resize-none' onChange={(e) => updateForm({ ...form, careerObjective: e.target.value })}></textarea>
                 </div>
                 <div className='w-full flex flex-col items-center justify-center gap-2'>
                     <div className='w-full flex justify-between items-center'>

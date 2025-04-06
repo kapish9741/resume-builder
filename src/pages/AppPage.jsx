@@ -4,6 +4,8 @@ import Footer from '../components/Footer.jsx'
 import Personal from '../components/Personal.jsx'
 import CareerDetails from '../components/CarrerDetails.jsx'
 import Skills from '../components/Skills.jsx'
+import { PDFDownloadLink } from '@react-pdf/renderer'
+import ResumeDocument from '../components/ResumeDocument.jsx'
 
 const AppPage = () => {
 
@@ -17,6 +19,7 @@ const AppPage = () => {
     github: '',
     leetcode: '',
     codeforces: '',
+    careerObjective: '',
     workExperience: [],
     academicQualification: [],
     certificates: [],
@@ -39,7 +42,12 @@ const AppPage = () => {
           <Personal updateForm={updateForm} form={form} />
           <CareerDetails updateForm={updateForm} form={form} />
           <Skills updateForm={updateForm} form={form} />
-          <button className='text-gray-100 bg-blue-500 px-10 py-4 rounded-lg hover:bg-blue-600 cursor-pointer flex justify-center items-center gap-2' onClick={generateResume}>Generate Resume<i className="bi bi-arrow-right text-gray-100 text-md"></i></button>
+          <PDFDownloadLink
+            document={<ResumeDocument form={form} />}
+            fileName="resume.pdf"
+            className='text-gray-100 bg-blue-500 px-10 py-4 rounded-lg hover:bg-blue-600 cursor-pointer flex justify-center items-center gap-2'>
+            <>Generate Resume<i className="bi bi-arrow-right text-gray-100 text-md"></i></>
+          </PDFDownloadLink>
         </section>
       </main>
       <footer className='w-screen h-20 flex justify-center items-center'><Footer /></footer>

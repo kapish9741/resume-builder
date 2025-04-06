@@ -39,7 +39,7 @@ const WorkExp = ({index, experience, updateFormArray, removeFormArrayItem}) => {
                 <textarea onChange={(e)=>{
                     e.preventDefault()
                     updateFormArray('workExperience', index, "description", e.target.value)
-                }} name='workDescription' placeholder='Describe your responsibilites and achievement...' className='w-full h-30 px-3 py-2 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-10 text-left overflow-hidden resize-none focus:outline-gray-100 placeholder:text-gray-600'></textarea>
+                }} name='workDescription' placeholder='Describe your responsibilites and achievement...' className='w-full h-32 px-3 py-2 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-10 text-left overflow-y-auto resize-none focus:outline-gray-100 placeholder:text-gray-600'></textarea>
             </div>
         </div>
     </>

@@ -30,7 +30,7 @@ const Personal = ({form, updateForm}) => {
                 </div>
                 <div className='w-full flex justify-start items-center flex-row gap-8'>
                     <div className='w-full flex justify-center items-start flex-col gap-2'>
-                        <label htmlFor="address" className='text-gray-300 text-sm py-1'>Address</label>
+                        <label htmlFor="address" className='text-gray-300 text-sm py-1'>Portfolio</label>
                         <input onChange={handleChange} name='personalPortfolio' type="text" placeholder='kapishrohilla.netlify.app' className='w-full px-3 py-3 bg-black border border-gray-800 rounded-md text-gray-100 text-sm focus:outline-gray-100 placeholder:text-gray-600' />
                     </div>
                     <div className='w-full flex justify-center items-start flex-col gap-2'>
