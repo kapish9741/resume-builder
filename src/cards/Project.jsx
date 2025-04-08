@@ -11,7 +11,7 @@ const Project = ({index, project, updateFormArray, removeFormArrayItem}) => {
                     removeFormArrayItem('projects',index)
                 }} className='flex focus:outline-none border-none cursor-pointer'><i class="text-xl bi bi-x"></i></button>
             </div>
-            <div className='w-full flex justify-start items-center md:flex-row flex-col md:gap-8 gap-4'>
+            <div className='w-full flex justify-start items-center flex-col md:gap-8 gap-4'>
                 <div className='w-full flex justify-center items-start flex-col gap-1'>
                     <label className='text-sm text-gray-100 flex py-1 rounded-md bg-black'>Project Name</label>
                     <input value={project.projectName} onChange={(e) => {
