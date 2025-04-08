@@ -34,13 +34,12 @@ const CareerDetails = ({form, updateForm}) => {
             ),
         }));
     };
-    
-    const removeFormArrayItem = (type, index) => {
+    function removeFormArrayItem(type, index) {
         updateForm((prevForm) => ({
             ...prevForm,
             [type]: prevForm[type].filter((_, i) => i !== index),
         }));
-    };
+    }
 
   return (
     <>

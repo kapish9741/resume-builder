@@ -8,10 +8,11 @@ const Academic = ({index, qualification, updateFormArray, removeFormArrayItem}) 
                 <h4 className='text-xs text-gray-400 flex px-3 py-1 rounded-2xl bg-gray-800'>Education {index+1}</h4>
                 <button onClick={(e) => {
                     e.preventDefault()
+                    // console.log(typeof removeFormArrayItem)
                     removeFormArrayItem('academicQualification',index)
                 }} className='flex focus:outline-none border-none cursor-pointer'><i class="text-xl bi bi-x"></i></button>
             </div>
-            <div className='w-full flex justify-start items-center flex-row gap-8'>
+            <div className='w-full flex justify-start items-center md:flex-row flex-col md:gap-8 gap-4'>
                 <div className='w-full flex justify-center items-start flex-col gap-1'>
                     <label className='text-sm text-gray-100 flex py-1 rounded-md bg-black'>Degree</label>
                     <input value={qualification.degree} onChange={(e) => {

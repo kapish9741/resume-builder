@@ -11,7 +11,7 @@ const Certification = ({index, certification, updateFormArray, removeFormArrayIt
                     removeFormArrayItem('certificates',index)
                 }} className='flex focus:outline-none border-none cursor-pointer'><i class="text-xl bi bi-x"></i></button>
             </div>
-            <div className='w-full flex justify-start items-center flex-row gap-4'>
+            <div className='w-full flex justify-start items-center md:flex-row flex-col md:gap-8 gap-4'>
                 <div className='w-full flex justify-center items-start flex-col gap-1'>
                     <label className='text-sm text-gray-100 flex py-1 rounded-md bg-black'>Name</label>
                     <input value={certification.certificateName} onChange={(e) => {

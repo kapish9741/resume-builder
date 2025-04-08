@@ -39,10 +39,8 @@ const Skills = ({form, updateForm}) => {
     };
     
     const removeFormArrayItem = (type, index) => {
-        updateForm((prevForm) => ({
-            ...prevForm,
-            [type]: prevForm[type].filter((_, i) => i !== index),
-        }));
+        let newObj = form;
+        updateForm({...newObj, [type]: newObj[type].filter((_, i) => i !== index)});
     };
 
   return (
